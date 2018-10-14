@@ -1,0 +1,21 @@
+# Fuction: Draw Python
+import turtle
+turtle.setup(650, 650, 200, 200)
+turtle.pu()
+turtle.fd(-250)
+turtle.seth(-90)
+turtle.fd(50)
+turtle.pd()
+turtle.pensize(20)
+turtle.pencolor("green")
+turtle.circle(250, 180)
+turtle.circle(200, 180)
+turtle.circle(40, 80)
+turtle.seth(-40)
+for i in range(2):
+    turtle.circle(40, 80)
+    turtle.circle(-40, 80)
+turtle.circle(40, 80/2)
+turtle.fd(40)
+turtle.circle(16, 180)
+turtle.fd(40 * 2/3)

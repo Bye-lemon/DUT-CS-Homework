@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- PAGE settings -->
+    <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+    <title>格智空间 - 物品借用</title>
+    <meta name="description" content="Free Bootstrap 4 Pingendo Elegant template for restaurant and food">
+    <meta name="keywords" content="Pingendo restaurant food elegant free template bootstrap 4">
+    <!-- CSS dependencies -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          type="text/css">
+    <link rel="stylesheet" href="../static/css/elegant.css" type="text/css">
+    <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+    <script src="../static/js/navbar-ontop.js"></script>
+    <!-- Script: Animated entrance -->
+    <script src="../static/js/animate-in.js"></script>
+</head>
+
+<body class="text-center">
+<!-- Navbar -->
+<!-- Cover -->
+<!-- Intro -->
+<!-- Gallery -->
+<!-- Menu -->
+<!-- Carousel reviews -->
+<!-- Carousel venue -->
+<div class="py-3 cover align-items-center d-flex photo-overlay" id="venue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 p-3">
+                <div class="py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>Tools List</h2>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-hover table-striped table-bordered">
+                    <thead class="thead-inverse">
+                    <tr>
+                        <th scope="col">Box ID</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Operation</th>
+                    </tr>
+                    </thead>
+                    {% if boxes %}
+                        <tbody class="text-center">
+                        {% for box in boxes %}
+                            <tr>
+                                <th scope="row">{{ box.id }}</th>
+                                {% if box.isEmpty %}
+                                    <td>This tool has been rented.</td>
+                                {% elif box.isWanted and box.wantedPerson != user.id %}
+                                    <td>This tool has been ordered.</td>
+                                {% elif box.isWanted and box.wantedPerson == user.id %}
+                                    <td>You have been ordered this tool.</td>
+                                {% else %}
+                                    <td>You can rent this tool.</td>
+                                {% endif %}
+                                <td>
+                                    {% if box.isEmpty %}
+                                        <button class="btn navbar-btn ml-2 btn-secondary disabled">Rent</button>
+                                    {% else %}
+                                        <button class="btn navbar-btn ml-2 btn-secondary"><a
+                                                href="{{ "%s?student_id=%s&box_id=%s"|format(QRCodePath, user.id, box.id) }}">Rent</a>
+                                        </button>
+                                    {% endif %}
+                                    {% if box.isWanted or box.usedPerson == user.id %}
+                                        <button class="btn navbar-btn ml-2 btn-secondary disabled">Order</button>
+                                    {% else %}
+                                        <button class="btn navbar-btn ml-2 btn-secondary"><a
+                                                href="{{ "%s?student_id=%s&box_id=%s&control=1"|format(orderPath, user.id, box.id) }}">Order</a>
+                                        </button>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    {% endif %}
+                </table>
+                <br>
+                <div class="py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>Power Bar List</h2>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-hover table-striped table-bordered">
+                    <thead class="thead-inverse">
+                    <tr>
+                        <th scope="col">Box ID</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Operation</th>
+                    </tr>
+                    </thead>
+                    {% if powerbars %}
+                        <tbody class="text-center">
+                        {% for powerbar in powerbars %}
+                            <tr>
+                                <th scope="row">{{ powerbar.id }}</th>
+                                {% if powerbar.isUsed and powerbar.usedPerson != user.id %}
+                                    <td>This power bar is using by others.</td>
+                                {% elif powerbar.isUsed and powerbar.usedPerson == user.id %}
+                                    <td>You are using this power bar now.</td>
+                                {% else %}
+                                    <td>You can use this power bar.</td>
+                                {% endif %}
+                                <td>
+                                    {% if powerbar.isUsed %}
+                                        <button class="btn navbar-btn ml-2 btn-secondary disabled">Connect Power
+                                        </button>
+                                    {% else %}
+                                        <button class="btn navbar-btn ml-2 btn-secondary"><a
+                                                href="{{ "%s?student_id=%s&power_bar_id=%s&connect=1"|format(powerPath, user.id, powerbar.id) }}">Connect
+                                            Power</a></button>
+                                    {% endif %}
+                                    {% if powerbar.isUsed and powerbar.usedPerson == user.id %}
+                                        <button class="btn navbar-btn ml-2 btn-secondary"><a
+                                                href="{{ "%s?student_id=%s&power_bar_id=%s&connect=0"|format(powerPath, user.id, powerbar.id) }}">Disconnect
+                                            Power</a></button>
+                                    {% else %}
+                                        <button class="btn navbar-btn ml-2 btn-secondary disabled">Disconnect Power
+                                        </button>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    {% endif %}
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="{{ mainUrl }}" class="btn navbar-btn ml-2 btn-secondary">返回主页</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Events -->
+<!-- Dark opaque section -->
+<!-- Footer -->
+<div class="text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-3">
+                <p class="text-center text-muted">© Copyright 2018 格智空间 - All rights reserved. </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- JavaScript dependencies -->
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<!-- Script: Smooth scrolling between anchors in the same page -->
+<script src="../static/js/smooth-scroll.js"></script>
+</body>
+
+</html>

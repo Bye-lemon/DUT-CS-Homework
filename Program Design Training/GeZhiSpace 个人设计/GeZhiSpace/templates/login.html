@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- PAGE settings -->
+    <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+    <title>格智空间 - 登陆</title>
+    <meta name="description" content="Free Bootstrap 4 Pingendo Elegant template for restaurant and food">
+    <meta name="keywords" content="Pingendo restaurant food elegant free template bootstrap 4">
+    <!-- CSS dependencies -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          type="text/css">
+    <link rel="stylesheet" href="../static/css/elegant.css" type="text/css">
+    <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+    <script src="../static/js/navbar-ontop.js"></script>
+    <!-- Script: Animated entrance -->
+    <script src="../static/js/animate-in.js"></script>
+</head>
+
+<body>
+<!-- Navbar -->
+<!-- Cover -->
+<div class="align-items-center d-flex photo-overlay py-5 cover"
+     style="background-image: url(&quot;../static/images/cover_dark.jpg&quot;);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 align-self-center text-lg-left text-center">
+                <h1 class="mb-0 mt-4 display-3">格智空间</h1>
+                <p class="mb-5 lead">智慧实验室系统</p>
+            </div>
+            <div class="col-lg-5 p-3">
+                <form class="p-4 bg-dark-opaque" method="post" action="{{ judgeLoginPath }}">
+                    <h4 class="mb-4 text-center">Login</h4>
+                    <div class="form-group">
+                        <label>学号</label>
+                        <input class="form-control" placeholder="Type here" name="id"></div>
+                    <div class="form-group">
+                        <label>密码</label>
+                        <input type="password" class="form-control" placeholder="Type here" name="password"></div>
+                    <button type="submit" class="btn mt-4 btn-block btn-outline-primary p-2">
+                        <b>Login</b>
+                    </button>
+                    <button class="btn mt-4 btn-block btn-outline-primary p-2">
+                        <b><a href="{{ registerPath }}">Sign Up</a></b>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Intro -->
+<!-- Gallery -->
+<!-- Menu -->
+<!-- Carousel reviews -->
+<!-- Carousel venue -->
+<!-- Events -->
+<!-- Dark opaque section -->
+<!-- Footer -->
+<div class="text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-3">
+                <p class="text-center text-muted">© Copyright 2018 格智空间 - All rights reserved. </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- JavaScript dependencies -->
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<!-- Script: Smooth scrolling between anchors in the same page -->
+<script src="../static/js/smooth-scroll.js"></script>
+</body>
+
+</html>
