@@ -1,0 +1,35 @@
+.MODEL TINY
+.CODE
+.STARTUP
+	MOV  CX, 00H
+	MOV  DX, OFFSET FNAME
+	MOV  AH, 3CH
+	INT  21H
+	MOV  BX, AX
+	MOV  AH, 3EH
+	INT  21H
+	
+	MOV  AL, 01H
+	MOV  DX, OFFSET FNAME
+	MOV  AH, 3DH
+	INT  21H
+	PUSH AX
+	
+	MOV  BX, AX
+	MOV  DX, OFFSET FCONTENT
+	MOV  CX, LEN
+	MOV  AH, 40H
+	INT  21H
+	
+	POP  BX
+	MOV  AH, 3EH
+	INT  21H
+.EXIT 0
+
+FNAME    DB  'C:\myinfo.txt', 0H
+FCONTENT DB  'Name:liyingping', 0DH, 0AH,
+	     'Number:201685040', 0DH, 0AH,
+	     'Phone:13941475810', 0DH, 0AH,
+	     'Email:Bye_lemon@mail.dlut.edu.cn', 0DH, 0AH, '$'
+LEN     EQU  $ - FCONTENT
+END
