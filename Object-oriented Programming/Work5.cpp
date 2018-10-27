@@ -43,6 +43,7 @@ public:
 	void disp(void);
 	void nodeCount(void);
 	void estNodeFind(void);
+	void sort(void);
 };
 
 Link::Link(void) {
@@ -82,6 +83,7 @@ void List::disp(void) {
 	Link* p = head->next;
 	while(p != NULL) {
 		p->disp();
+		cout<<'\n';
 		p = p->next;
 	}
 }
@@ -184,81 +186,135 @@ void List::estNodeFind(void) {
 	}
 }
 
-int main(void) {
-	List list;
-
-/*	Link link1("Li Yingping", 12345, 'M', "1999/05/03", 99, 99, 99);
-	Link link2("Xie Haixiang", 24680, 'M', "1998/06/04", 100, 98, 97);
-	Link link3("Temp", 33333, 'M', "1997/07/05", 10, 90, 90);
-
-	list.nodeAppend(&link1);
-	list.nodeAppend(&link2);
-	list.nodeAppend(&link3);*/
-/*	Student foo;
-
-	cout<<"Enter student's name: ";
-	cin>>foo.name;
-	cout<<"Enter student's id(limited in 0 ~ 65536): ";
-	cin>>foo.id;
-	cout<<"Enter student's gender('F' or 'M'): ";
-	cin>>foo.gender;
-	cout<<"Enter student's birthday(like \"1970/01/01\"): ";
-	cin>>foo.birth;
-	cout<<"Enter student's grade: ";
-	cin>>foo.grade[0]>>foo.grade[1]>>foo.grade[2];
-	Link link(foo.name, foo.id, foo.gender, foo.birth, foo.grade[0], foo.grade[1], foo.grade[2]);
-	link.disp();
-	list.nodeAppend(&link);*/
-	list.disp();
-	list.nodeCount();
-	list.estNodeFind();
-	list.nodeSearch("Li Yingping");
-	list.nodeSearch(24680);
-	list.nodeDelete("Temp");
-	list.disp();
-
-	return 0;
+void List::sort(void) {
+	Link* p = head->next;
+	this->nodeCount();
+	cout<<"Now sorted it ......\n";
+	for(int i = 0; i < size - 1; i ++, p = head->next) {
+		for(int j = 0; j < size - i - 1; j ++, p = p->next) {
+			if(p->info.final < p->next->info.final) {
+				char str20[20], str10[10], str;
+				int temp;
+				strcpy(str20, p->next->info.name);
+				strcpy(p->next->info.name, p->info.name);
+				strcpy(p->info.name, str20);
+				strcpy(str10, p->next->info.birth);
+				strcpy(p->next->info.birth, p->info.birth);
+				strcpy(p->info.birth, str10);
+				str = p->next->info.gender;
+				p->next->info.gender = p->info.gender;
+				p->info.gender = str;
+				temp = p->next->info.id;
+				p->next->info.id = p->info.id;
+				p->info.id = temp;
+				temp = p->next->info.final;
+				p->next->info.final = p->info.final;
+				p->info.final = temp;
+				for(int cnt = 0; cnt <3; cnt ++) {
+					temp = p->next->info.grade[cnt];
+					p->next->info.grade[cnt] = p->info.grade[cnt];
+					p->info.grade[cnt] = temp;
+				}
+			}
+		}
+	}
+	this->disp();
 }
 
 void Init(void) {
-	cout<<"************基于链表的学生信息管理系统************\n";
-	cout<<"                1. 录入学生信息\n";
-	cout<<"                2. 查找学生信息\n";
-	cout<<"                3. 删除学生信息\n";
-	cout<<"                4. 显示学生信息\n";
-	cout<<"                5. 显示最高分和最低分同学信息\n";
-	cout<<"                6. 退出系统\n";
+	cout<<"************ Student Information Management System Based on LinkList ************\n\n";
+	cout<<"                    1. Insert Student Information\n";
+	cout<<"                    2. Search Student Information\n";
+	cout<<"                    3. Delete Student Information\n";
+	cout<<"                    4. Display Student Information\n";
+	cout<<"                    5. Show the Highest and Lowest\n";
+	cout<<"                    6. Sort Student Information\n\n";
+	cout<<"                    Q. Quit\n\n";
+	cout<<"*********************************************************************************\n";
 }
 
 int main(void) {
-	Link list;
+	List list;
 
 	while(1) {
 		system("cls");
 		Init();
-		int choice;
+		char choice;
+		cout<<"Input Your Choice: ";
+		cin>>choice;
 		switch(choice) {
-		case 1:
-			Student foo;
-			cout<<"Enter student's name: ";
-			cin>>foo.name;
-			cout<<"Enter student's id(limited in 0 ~ 65536): ";
-			cin>>foo.id;
-			cout<<"Enter student's gender('F' or 'M'): ";
-			cin>>foo.gender;
-			cout<<"Enter student's birthday(like \"1970/01/01\"): ";
-			cin>>foo.birth;
-			cout<<"Enter student's grade: ";
-			cin>>foo.grade[0]>>foo.grade[1]>>foo.grade[2];
-			Link link(foo.name, foo.id, foo.gender, foo.birth, foo.grade[0], foo.grade[1], foo.grade[2]);
-			link.disp();
-			list.nodeAppend(&link);
-
-			break;
-		case 2:
-			cout<<"Indexed by name or ID(1 for name and 0 for id):";
-			int foo;
-			cin>>foo;
-			if(foo){
-				cout<<"Enter a name:";
-				char name[20];
+			case '1':
+				system("cls");
+				Student foo;
+				cout<<"Enter student's name: ";
+				cin>>foo.name;
+				cout<<"Enter student's id(limited in 0 ~ 65536): ";
+				cin>>foo.id;
+				cout<<"Enter student's gender('F' or 'M'): ";
+				cin>>foo.gender;
+				cout<<"Enter student's birthday(like \"1970/01/01\"): ";
+				cin>>foo.birth;
+				cout<<"Enter student's grade: ";
+				cin>>foo.grade[0]>>foo.grade[1]>>foo.grade[2];
+				Link* link;
+				link = new Link(foo.name, foo.id, foo.gender, foo.birth, foo.grade[0], foo.grade[1], foo.grade[2]);
+				list.nodeAppend(link);
+				break;
+			case '2':
+				system("cls");
+				cout<<"Indexed by name or ID(1 for name and 0 for id):";
+				int bar;
+				cin>>bar;
+				if(bar) {
+					cout<<"Enter a name:";
+					char name[20];
+					cin>>name;
+					list.nodeSearch(name);
+				} else {
+					cout<<"Enter an ID:";
+					int id;
+					cin>>id;
+					list.nodeSearch(id);
+				}
+				break;
+			case '3':
+				system("cls");
+				cout<<"Indexed by name or ID(1 for name and 0 for id):";
+				int baz;
+				cin>>baz;
+				if(baz) {
+					cout<<"Enter a name:";
+					char name[20];
+					cin>>name;
+					list.nodeDelete(name);
+				} else {
+					cout<<"Enter an ID:";
+					int id;
+					cin>>id;
+					list.nodeDelete(id);
+				}
+				break;
+			case '4':
+				system("cls");
+				list.disp();
+				break;
+			case '5':
+				system("cls");
+				list.estNodeFind();
+				break;
+			case '6':
+				system("cls");
+				list.sort();
+				break;
+			case 'q':
+			case 'Q':
+				return 0;
+				break;
+			default:
+				break;
+		}
+		system("pause");
+	}
+	
+	return 0;
+}
