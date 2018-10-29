@@ -6,7 +6,7 @@ using namespace std;
 
 typedef struct _Student {
 	char name[20];
-	unsigned int id; //Student id limited in 0 ~ 65536
+	unsigned int id;
 	char gender; //Male is marked as 'M'; Female is marked as 'F' 
 	char birth[11]; //Like "1970/01/01"
 	int grade[3];
