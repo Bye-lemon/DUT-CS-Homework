@@ -1,0 +1,2500 @@
+$comment
+	File created using the following command:
+		vcd file RAMROM.msim.vcd -direction
+$end
+$date
+	Thu Nov 29 10:13:11 2018
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module FIFO_vlg_vec_tst $end
+$var reg 1 ! CLK $end
+$var reg 1 " CLR $end
+$var reg 8 # D [7:0] $end
+$var reg 1 $ WREN $end
+$var wire 1 % Q [7] $end
+$var wire 1 & Q [6] $end
+$var wire 1 ' Q [5] $end
+$var wire 1 ( Q [4] $end
+$var wire 1 ) Q [3] $end
+$var wire 1 * Q [2] $end
+$var wire 1 + Q [1] $end
+$var wire 1 , Q [0] $end
+$var wire 1 - U [7] $end
+$var wire 1 . U [6] $end
+$var wire 1 / U [5] $end
+$var wire 1 0 U [4] $end
+$var wire 1 1 U [3] $end
+$var wire 1 2 U [2] $end
+$var wire 1 3 U [1] $end
+$var wire 1 4 U [0] $end
+$var wire 1 5 sampler $end
+$scope module i1 $end
+$var wire 1 6 gnd $end
+$var wire 1 7 vcc $end
+$var wire 1 8 unknown $end
+$var tri1 1 9 devclrn $end
+$var tri1 1 : devpor $end
+$var tri1 1 ; devoe $end
+$var wire 1 < Q[7]~output_o $end
+$var wire 1 = Q[6]~output_o $end
+$var wire 1 > Q[5]~output_o $end
+$var wire 1 ? Q[4]~output_o $end
+$var wire 1 @ Q[3]~output_o $end
+$var wire 1 A Q[2]~output_o $end
+$var wire 1 B Q[1]~output_o $end
+$var wire 1 C Q[0]~output_o $end
+$var wire 1 D U[7]~output_o $end
+$var wire 1 E U[6]~output_o $end
+$var wire 1 F U[5]~output_o $end
+$var wire 1 G U[4]~output_o $end
+$var wire 1 H U[3]~output_o $end
+$var wire 1 I U[2]~output_o $end
+$var wire 1 J U[1]~output_o $end
+$var wire 1 K U[0]~output_o $end
+$var wire 1 L WREN~input_o $end
+$var wire 1 M CLK~input_o $end
+$var wire 1 N CLK~inputclkctrl_outclk $end
+$var wire 1 O inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_comb_bita0~combout $end
+$var wire 1 P CLR~input_o $end
+$var wire 1 Q CLR~inputclkctrl_outclk $end
+$var wire 1 R inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_comb_bita0~COUT $end
+$var wire 1 S inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_comb_bita1~combout $end
+$var wire 1 T inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_comb_bita1~COUT $end
+$var wire 1 U inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_comb_bita2~combout $end
+$var wire 1 V inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_comb_bita2~COUT $end
+$var wire 1 W inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_comb_bita3~combout $end
+$var wire 1 X inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_comb_bita3~COUT $end
+$var wire 1 Y inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_comb_bita4~combout $end
+$var wire 1 Z inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_comb_bita4~COUT $end
+$var wire 1 [ inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_comb_bita5~combout $end
+$var wire 1 \ inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_comb_bita5~COUT $end
+$var wire 1 ] inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_comb_bita6~combout $end
+$var wire 1 ^ inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_comb_bita6~COUT $end
+$var wire 1 _ inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_comb_bita7~combout $end
+$var wire 1 ` inst|scfifo_component|auto_generated|dpfifo|fifo_state|b_non_empty~1_combout $end
+$var wire 1 a inst|scfifo_component|auto_generated|dpfifo|fifo_state|b_non_empty~2_combout $end
+$var wire 1 b inst|scfifo_component|auto_generated|dpfifo|fifo_state|b_non_empty~0_combout $end
+$var wire 1 c inst|scfifo_component|auto_generated|dpfifo|fifo_state|b_non_empty~3_combout $end
+$var wire 1 d inst|scfifo_component|auto_generated|dpfifo|fifo_state|b_non_empty~q $end
+$var wire 1 e inst|scfifo_component|auto_generated|dpfifo|fifo_state|_~0_combout $end
+$var wire 1 f inst|scfifo_component|auto_generated|dpfifo|fifo_state|b_full~1_combout $end
+$var wire 1 g inst|scfifo_component|auto_generated|dpfifo|fifo_state|b_full~0_combout $end
+$var wire 1 h inst|scfifo_component|auto_generated|dpfifo|fifo_state|b_full~2_combout $end
+$var wire 1 i inst|scfifo_component|auto_generated|dpfifo|fifo_state|b_full~3_combout $end
+$var wire 1 j inst|scfifo_component|auto_generated|dpfifo|fifo_state|b_full~q $end
+$var wire 1 k inst|scfifo_component|auto_generated|dpfifo|valid_wreq~combout $end
+$var wire 1 l inst|scfifo_component|auto_generated|dpfifo|valid_rreq~combout $end
+$var wire 1 m D[0]~input_o $end
+$var wire 1 n inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_comb_bita0~combout $end
+$var wire 1 o inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_comb_bita0~COUT $end
+$var wire 1 p inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_comb_bita1~combout $end
+$var wire 1 q inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_comb_bita1~COUT $end
+$var wire 1 r inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_comb_bita2~combout $end
+$var wire 1 s inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_comb_bita2~COUT $end
+$var wire 1 t inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_comb_bita3~combout $end
+$var wire 1 u inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_comb_bita3~COUT $end
+$var wire 1 v inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_comb_bita4~combout $end
+$var wire 1 w inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_comb_bita4~COUT $end
+$var wire 1 x inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_comb_bita5~combout $end
+$var wire 1 y inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_comb_bita5~COUT $end
+$var wire 1 z inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_comb_bita6~combout $end
+$var wire 1 { inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_comb_bita6~COUT $end
+$var wire 1 | inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_comb_bita7~combout $end
+$var wire 1 } inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_comb_bita0~combout $end
+$var wire 1 ~ inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_comb_bita0~COUT $end
+$var wire 1 !! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_comb_bita1~combout $end
+$var wire 1 "! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_comb_bita1~COUT $end
+$var wire 1 #! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_comb_bita2~combout $end
+$var wire 1 $! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_comb_bita2~COUT $end
+$var wire 1 %! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_comb_bita3~combout $end
+$var wire 1 &! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_comb_bita3~COUT $end
+$var wire 1 '! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_comb_bita4~combout $end
+$var wire 1 (! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_comb_bita4~COUT $end
+$var wire 1 )! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_comb_bita5~combout $end
+$var wire 1 *! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_comb_bita5~COUT $end
+$var wire 1 +! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_comb_bita6~combout $end
+$var wire 1 ,! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_comb_bita6~COUT $end
+$var wire 1 -! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_comb_bita7~combout $end
+$var wire 1 .! D[1]~input_o $end
+$var wire 1 /! D[2]~input_o $end
+$var wire 1 0! D[3]~input_o $end
+$var wire 1 1! D[4]~input_o $end
+$var wire 1 2! D[5]~input_o $end
+$var wire 1 3! D[6]~input_o $end
+$var wire 1 4! D[7]~input_o $end
+$var wire 1 5! inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit [7] $end
+$var wire 1 6! inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit [6] $end
+$var wire 1 7! inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit [5] $end
+$var wire 1 8! inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit [4] $end
+$var wire 1 9! inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit [3] $end
+$var wire 1 :! inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit [2] $end
+$var wire 1 ;! inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit [1] $end
+$var wire 1 <! inst|scfifo_component|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit [0] $end
+$var wire 1 =! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|q_b [7] $end
+$var wire 1 >! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|q_b [6] $end
+$var wire 1 ?! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|q_b [5] $end
+$var wire 1 @! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|q_b [4] $end
+$var wire 1 A! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|q_b [3] $end
+$var wire 1 B! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|q_b [2] $end
+$var wire 1 C! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|q_b [1] $end
+$var wire 1 D! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|q_b [0] $end
+$var wire 1 E! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_reg_bit [7] $end
+$var wire 1 F! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_reg_bit [6] $end
+$var wire 1 G! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_reg_bit [5] $end
+$var wire 1 H! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_reg_bit [4] $end
+$var wire 1 I! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_reg_bit [3] $end
+$var wire 1 J! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_reg_bit [2] $end
+$var wire 1 K! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_reg_bit [1] $end
+$var wire 1 L! inst|scfifo_component|auto_generated|dpfifo|rd_ptr_count|counter_reg_bit [0] $end
+$var wire 1 M! inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_reg_bit [7] $end
+$var wire 1 N! inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_reg_bit [6] $end
+$var wire 1 O! inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_reg_bit [5] $end
+$var wire 1 P! inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_reg_bit [4] $end
+$var wire 1 Q! inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_reg_bit [3] $end
+$var wire 1 R! inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_reg_bit [2] $end
+$var wire 1 S! inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_reg_bit [1] $end
+$var wire 1 T! inst|scfifo_component|auto_generated|dpfifo|wr_ptr|counter_reg_bit [0] $end
+$var wire 1 U! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [35] $end
+$var wire 1 V! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [34] $end
+$var wire 1 W! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [33] $end
+$var wire 1 X! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [32] $end
+$var wire 1 Y! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [31] $end
+$var wire 1 Z! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [30] $end
+$var wire 1 [! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [29] $end
+$var wire 1 \! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [28] $end
+$var wire 1 ]! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [27] $end
+$var wire 1 ^! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [26] $end
+$var wire 1 _! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [25] $end
+$var wire 1 `! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [24] $end
+$var wire 1 a! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [23] $end
+$var wire 1 b! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [22] $end
+$var wire 1 c! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [21] $end
+$var wire 1 d! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [20] $end
+$var wire 1 e! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [19] $end
+$var wire 1 f! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [18] $end
+$var wire 1 g! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [17] $end
+$var wire 1 h! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [16] $end
+$var wire 1 i! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [15] $end
+$var wire 1 j! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [14] $end
+$var wire 1 k! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [13] $end
+$var wire 1 l! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [12] $end
+$var wire 1 m! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [11] $end
+$var wire 1 n! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [10] $end
+$var wire 1 o! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [9] $end
+$var wire 1 p! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [8] $end
+$var wire 1 q! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [7] $end
+$var wire 1 r! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [6] $end
+$var wire 1 s! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [5] $end
+$var wire 1 t! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [4] $end
+$var wire 1 u! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [3] $end
+$var wire 1 v! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [2] $end
+$var wire 1 w! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [1] $end
+$var wire 1 x! inst|scfifo_component|auto_generated|dpfifo|FIFOram|altsyncram1|ram_block2a0_PORTBDATAOUT_bus [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+b0 #
+1$
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+x5
+06
+17
+x8
+19
+1:
+1;
+x<
+x=
+x>
+x?
+x@
+xA
+xB
+xC
+xD
+xE
+xF
+xG
+xH
+xI
+xJ
+xK
+1L
+0M
+xN
+xO
+0P
+xQ
+xR
+xS
+xT
+xU
+xV
+xW
+xX
+xY
+xZ
+x[
+x\
+x]
+x^
+x_
+x`
+xa
+xb
+xc
+0d
+xe
+xf
+xg
+xh
+xi
+0j
+xk
+xl
+0m
+xn
+xo
+xp
+xq
+xr
+xs
+xt
+xu
+xv
+xw
+xx
+xy
+xz
+x{
+x|
+x}
+x~
+x!!
+x"!
+x#!
+x$!
+x%!
+x&!
+x'!
+x(!
+x)!
+x*!
+x+!
+x,!
+x-!
+0.!
+0/!
+00!
+01!
+02!
+03!
+04!
+0<!
+0;!
+0:!
+09!
+08!
+07!
+06!
+05!
+0D!
+0C!
+0B!
+0A!
+0@!
+0?!
+0>!
+0=!
+0L!
+0K!
+0J!
+0I!
+0H!
+0G!
+0F!
+0E!
+0T!
+0S!
+0R!
+0Q!
+0P!
+0O!
+0N!
+0M!
+0x!
+0w!
+0v!
+0u!
+0t!
+0s!
+0r!
+0q!
+0p!
+0o!
+0n!
+0m!
+0l!
+0k!
+0j!
+0i!
+0h!
+0g!
+0f!
+0e!
+0d!
+0c!
+0b!
+0a!
+0`!
+0_!
+0^!
+0]!
+0\!
+0[!
+0Z!
+0Y!
+0X!
+0W!
+0V!
+0U!
+$end
+#145
+0Q
+0N
+#437
+0f
+#447
+0g
+#556
+0l
+#665
+0$!
+0~
+0w
+0s
+#666
+0,!
+#667
+0(!
+0{
+#668
+0o
+#681
+0h
+#702
+1}
+#707
+1n
+#726
+1a
+#729
+1O
+#730
+0`
+#789
+1q
+#791
+1*!
+#793
+1&!
+1"!
+1y
+1u
+#1003
+0i
+#1102
+0t
+0x
+0!!
+0%!
+#1103
+0-!
+#1104
+0|
+0)!
+#1105
+0p
+#1226
+0r
+#1228
+0+!
+#1230
+0v
+0z
+0#!
+0'!
+#2652
+0I
+02
+#2663
+0H
+0G
+01
+00
+#2665
+0J
+03
+#2670
+0F
+0/
+#2848
+0K
+04
+#2849
+0D
+0-
+#2923
+0<
+0%
+#2940
+0?
+0(
+#2944
+0A
+0*
+#2950
+0C
+0,
+#2966
+0B
+0+
+#3059
+0E
+0.
+#3073
+0@
+0)
+#3081
+0=
+0&
+#3150
+0>
+0'
+#3195
+1b
+#3390
+1e
+1k
+#3826
+1c
+#3958
+0R
+#3959
+0V
+#4174
+0^
+0Z
+#4255
+1\
+1X
+#4292
+1T
+#4395
+0S
+#4396
+0W
+#4611
+0[
+0_
+#4692
+0Y
+0]
+#4729
+0U
+#750000
+1!
+05
+#750775
+1M
+#750938
+1N
+#752625
+1T!
+#752626
+1d
+#752989
+1<!
+#753258
+0n
+#753327
+1o
+#753636
+0a
+#753638
+0O
+#753707
+1R
+#753782
+1p
+#754162
+1S
+#755867
+1K
+14
+#1500000
+b1 #
+0!
+15
+#1500689
+1m
+#1500936
+0M
+#1501081
+0N
+#2250000
+1!
+05
+#2250775
+1M
+#2250938
+1N
+#2252625
+0T!
+1S!
+#2252989
+1;!
+0<!
+#2253206
+0q
+#2253259
+0p
+#2253293
+0o
+#2253332
+1n
+#2253351
+1q
+#2253588
+0T
+#2253613
+1a
+#2253643
+0S
+#2253683
+0R
+#2253718
+1O
+#2253741
+1T
+#2253748
+1p
+#2254138
+1S
+#2255666
+1J
+13
+#2255837
+0K
+04
+#3000000
+b11 #
+b10 #
+0!
+15
+#3000699
+1.!
+#3000852
+0m
+#3000936
+0M
+#3001081
+0N
+#3750000
+1!
+05
+#3750775
+1M
+#3750938
+1N
+#3752625
+1T!
+#3752989
+1<!
+#3753258
+0n
+#3753327
+1o
+#3753385
+0q
+#3753638
+0O
+#3753707
+1R
+#3753764
+0p
+#3753765
+0T
+#3753840
+1r
+#3754144
+0S
+#3754220
+1U
+#3755867
+1K
+14
+#4500000
+b11 #
+0!
+15
+#4500689
+1m
+#4500936
+0M
+#4501081
+0N
+#5250000
+1!
+05
+#5250775
+1M
+#5250938
+1N
+#5252625
+0T!
+0S!
+1R!
+#5252989
+0;!
+1:!
+0<!
+#5253258
+0r
+#5253293
+0o
+#5253332
+1n
+#5253335
+1s
+#5253414
+1q
+#5253472
+0s
+#5253683
+0R
+#5253718
+1O
+#5253770
+0U
+#5253805
+1T
+#5253869
+1r
+#5254260
+1U
+#5255649
+1I
+12
+#5255654
+0J
+03
+#5255837
+0K
+04
+#6000000
+b111 #
+b101 #
+b100 #
+0!
+15
+#6000699
+1/!
+#6000852
+0m
+#6000862
+0.!
+#6000936
+0M
+#6001081
+0N
+#6750000
+1!
+05
+#6750775
+1M
+#6750938
+1N
+#6752625
+1T!
+#6752989
+1<!
+#6753258
+0n
+#6753327
+1o
+#6753638
+0O
+#6753707
+1R
+#6753782
+1p
+#6754162
+1S
+#6755867
+1K
+14
+#7500000
+b101 #
+0!
+15
+#7500689
+1m
+#7500936
+0M
+#7501081
+0N
+#8250000
+1!
+05
+#8250775
+1M
+#8250938
+1N
+#8252625
+0T!
+1S!
+#8252989
+1;!
+0<!
+#8253206
+0q
+#8253259
+0p
+#8253264
+1s
+#8253293
+0o
+#8253332
+1n
+#8253351
+1q
+#8253409
+0s
+#8253588
+0T
+#8253643
+0S
+#8253646
+1V
+#8253683
+0R
+#8253718
+1O
+#8253741
+1T
+#8253748
+1p
+#8253799
+0V
+#8254138
+1S
+#8255666
+1J
+13
+#8255837
+0K
+04
+#9000000
+b111 #
+b110 #
+0!
+15
+#9000699
+1.!
+#9000852
+0m
+#9000936
+0M
+#9001081
+0N
+#9750000
+1!
+05
+#9750775
+1M
+#9750938
+1N
+#9752625
+1T!
+#9752989
+1<!
+#9753258
+0n
+#9753327
+1o
+#9753385
+0q
+#9753443
+1s
+#9753638
+0O
+#9753707
+1R
+#9753764
+0p
+#9753765
+0T
+#9753822
+0r
+#9753823
+1V
+#9753898
+1t
+#9754144
+0S
+#9754202
+0U
+#9754278
+1W
+#9755867
+1K
+14
+#10500000
+b111 #
+0!
+15
+#10500689
+1m
+#10500936
+0M
+#10501081
+0N
+#11250000
+1!
+05
+#11250775
+1M
+#11250938
+1N
+#11252625
+0T!
+0S!
+0R!
+1Q!
+#11252989
+0;!
+0:!
+19!
+0<!
+#11253207
+0u
+#11253262
+0t
+#11253290
+0s
+#11253293
+0o
+#11253327
+1r
+#11253332
+1n
+#11253348
+1u
+#11253414
+1q
+#11253683
+0R
+#11253718
+1O
+#11253729
+0X
+#11253745
+1t
+#11253782
+0W
+#11253794
+0V
+#11253805
+1T
+#11253851
+0r
+#11253852
+1X
+#11254249
+1W
+#11255641
+0I
+02
+#11255654
+0J
+03
+#11255662
+1H
+11
+#11255837
+0K
+04
+#12000000
+b1111 #
+b1011 #
+b1001 #
+b1000 #
+0!
+15
+#12000739
+10!
+#12000852
+0m
+#12000862
+0.!
+0/!
+#12000936
+0M
+#12001081
+0N
+#12750000
+1!
+05
+#12750775
+1M
+#12750938
+1N
+#12752625
+1T!
+#12752989
+1<!
+#12753258
+0n
+#12753327
+1o
+#12753638
+0O
+#12753707
+1R
+#12753782
+1p
+#12754162
+1S
+#12755867
+1K
+14
+#13500000
+b1001 #
+0!
+15
+#13500689
+1m
+#13500936
+0M
+#13501081
+0N
+#14250000
+1!
+05
+#14250775
+1M
+#14250938
+1N
+#14252625
+0T!
+1S!
+#14252989
+1;!
+0<!
+#14253206
+0q
+#14253259
+0p
+#14253293
+0o
+#14253332
+1n
+#14253351
+1q
+#14253588
+0T
+#14253643
+0S
+#14253683
+0R
+#14253718
+1O
+#14253741
+1T
+#14253748
+1p
+#14254138
+1S
+#14255666
+1J
+13
+#14255837
+0K
+04
+#15000000
+b1011 #
+b1010 #
+0!
+15
+#15000699
+1.!
+#15000852
+0m
+#15000936
+0M
+#15001081
+0N
+#15750000
+1!
+05
+#15750775
+1M
+#15750938
+1N
+#15752625
+1T!
+#15752989
+1<!
+#15753258
+0n
+#15753327
+1o
+#15753385
+0q
+#15753638
+0O
+#15753707
+1R
+#15753764
+0p
+#15753765
+0T
+#15753840
+1r
+#15754144
+0S
+#15754220
+1U
+#15755867
+1K
+14
+#16500000
+b1011 #
+0!
+15
+#16500689
+1m
+#16500936
+0M
+#16501081
+0N
+#17250000
+1!
+05
+#17250775
+1M
+#17250938
+1N
+#17252625
+0T!
+0S!
+1R!
+#17252989
+0;!
+1:!
+0<!
+#17253258
+0r
+#17253293
+0o
+#17253332
+1n
+#17253335
+1s
+#17253393
+0u
+#17253414
+1q
+#17253472
+0s
+#17253530
+1u
+#17253683
+0R
+#17253718
+1O
+#17253770
+0U
+#17253805
+1T
+#17253869
+1r
+#17254260
+1U
+#17255649
+1I
+12
+#17255654
+0J
+03
+#17255837
+0K
+04
+#18000000
+b1111 #
+b1101 #
+b1100 #
+0!
+15
+#18000699
+1/!
+#18000852
+0m
+#18000862
+0.!
+#18000936
+0M
+#18001081
+0N
+#18750000
+1!
+05
+#18750775
+1M
+#18750938
+1N
+#18752625
+1T!
+#18752989
+1<!
+#18753258
+0n
+#18753327
+1o
+#18753638
+0O
+#18753707
+1R
+#18753782
+1p
+#18754162
+1S
+#18755867
+1K
+14
+#19500000
+b1101 #
+0!
+15
+#19500689
+1m
+#19500936
+0M
+#19501081
+0N
+#20250000
+1!
+05
+#20250775
+1M
+#20250938
+1N
+#20252625
+0T!
+1S!
+#20252989
+1;!
+0<!
+#20253206
+0q
+#20253259
+0p
+#20253264
+1s
+#20253293
+0o
+#20253322
+0u
+#20253332
+1n
+#20253351
+1q
+#20253409
+0s
+#20253467
+1u
+#20253588
+0T
+#20253643
+0S
+#20253646
+1V
+#20253683
+0R
+#20253704
+0X
+#20253718
+1O
+#20253741
+1T
+#20253748
+1p
+#20253799
+0V
+#20253857
+1X
+#20254138
+1S
+#20255666
+1J
+13
+#20255837
+0K
+04
+#21000000
+b1111 #
+b1110 #
+0!
+15
+#21000699
+1.!
+#21000852
+0m
+#21000936
+0M
+#21001081
+0N
+#21750000
+1!
+05
+#21750775
+1M
+#21750938
+1N
+#21752625
+1T!
+#21752989
+1<!
+#21753258
+0n
+#21753327
+1o
+#21753385
+0q
+#21753443
+1s
+#21753501
+0u
+#21753638
+0O
+#21753707
+1R
+#21753764
+0p
+#21753765
+0T
+#21753822
+0r
+#21753823
+1V
+#21753880
+0t
+#21753881
+0X
+#21753956
+1v
+#21754144
+0S
+#21754202
+0U
+#21754260
+0W
+#21754336
+1Y
+#21755867
+1K
+14
+#22500000
+b1111 #
+0!
+15
+#22500689
+1m
+#22500936
+0M
+#22501081
+0N
+#23250000
+1!
+05
+#23250775
+1M
+#23250938
+1N
+#23252625
+0T!
+0S!
+0R!
+0Q!
+1P!
+#23252989
+0;!
+0:!
+09!
+18!
+0<!
+#23253258
+0v
+#23253290
+0s
+#23253293
+0o
+#23253327
+1r
+#23253332
+1n
+#23253335
+1w
+#23253414
+1q
+#23253418
+1u
+#23253476
+0w
+#23253627
+1`
+#23253639
+0Y
+#23253683
+0R
+#23253716
+1Z
+#23253718
+1O
+#23253794
+0V
+#23253805
+1T
+#23253851
+0r
+#23253873
+1v
+#23253929
+1X
+#23253987
+0Z
+#23254384
+1Y
+#23255641
+0I
+02
+#23255652
+0H
+01
+#23255654
+0J
+03
+#23255670
+1G
+10
+#23255837
+0K
+04
+#24000000
+b11111 #
+b10111 #
+b10011 #
+b10001 #
+b10000 #
+0!
+15
+#24000689
+11!
+#24000852
+0m
+#24000862
+0.!
+0/!
+#24000902
+00!
+#24000936
+0M
+#24001081
+0N
+#24320000
+0$
+05
+#24320872
+0L
+#24324317
+0b
+#24324445
+1l
+#24324543
+0k
+#24325282
+1R
+#24325340
+0T
+#24325398
+1V
+#24325456
+0X
+#24325737
+1S
+#24325795
+1U
+#24325853
+1W
+#24325893
+0Y
+#24750000
+1!
+15
+#24750775
+1M
+#24750938
+1N
+#24752986
+1L!
+#24752989
+1;!
+1:!
+19!
+08!
+1<!
+#24753586
+0R
+#24753619
+0}
+#24753638
+0O
+#24753696
+1~
+#24753709
+1Y
+#24753710
+0`
+#24753716
+1T
+#24753718
+0V
+#24753805
+1Z
+#24753850
+1X
+#24753863
+0\
+#24753908
+0Z
+#24753921
+1^
+#24753966
+1\
+#24754024
+0^
+#24754151
+1!!
+#24754287
+0Y
+#24755649
+1I
+12
+#24755652
+0G
+00
+#24755662
+1H
+11
+#24755666
+1J
+13
+#24755867
+1K
+14
+#25500000
+b10001 #
+0!
+05
+#25500689
+1m
+#25500936
+0M
+#25501081
+0N
+#26250000
+1!
+15
+#26250775
+1M
+#26250938
+1N
+#26252986
+0L!
+1K!
+#26252989
+0<!
+#26253568
+0"!
+#26253623
+0!!
+#26253651
+0~
+#26253688
+1}
+#26253709
+1"!
+#26253718
+1O
+#26253804
+1R
+#26254106
+1!!
+#26254241
+0S
+#26255196
+1x!
+1D!
+#26255837
+0K
+04
+#26258194
+1C
+1,
+#27000000
+b10011 #
+b10010 #
+0!
+05
+#27000699
+1.!
+#27000852
+0m
+#27000936
+0M
+#27001081
+0N
+#27750000
+1!
+15
+#27750775
+1M
+#27750938
+1N
+#27752986
+1L!
+#27752989
+0;!
+1<!
+#27753586
+0R
+#27753619
+0}
+#27753638
+0O
+#27753696
+1~
+#27753754
+0"!
+#27754133
+0!!
+#27754209
+1#!
+#27755196
+0x!
+1w!
+0D!
+1C!
+#27755654
+0J
+03
+#27755867
+1K
+14
+#27758146
+0C
+0,
+#27758210
+1B
+1+
+#28500000
+b10011 #
+0!
+05
+#28500689
+1m
+#28500936
+0M
+#28501081
+0N
+#29250000
+1!
+15
+#29250775
+1M
+#29250938
+1N
+#29252986
+0L!
+0K!
+1J!
+#29252989
+0<!
+#29253619
+0#!
+#29253651
+0~
+#29253688
+1}
+#29253696
+1$!
+#29253718
+1O
+#29253779
+1"!
+#29253804
+1R
+#29253837
+0$!
+#29253862
+0T
+#29254234
+1#!
+#29254259
+1S
+#29254299
+0U
+#29255196
+1x!
+1D!
+#29255837
+0K
+04
+#29258194
+1C
+1,
+#30000000
+b10111 #
+b10101 #
+b10100 #
+0!
+05
+#30000699
+1/!
+#30000852
+0m
+#30000862
+0.!
+#30000936
+0M
+#30001081
+0N
+#30750000
+1!
+15
+#30750775
+1M
+#30750938
+1N
+#30752986
+1L!
+#30752989
+1;!
+0:!
+1<!
+#30753586
+0R
+#30753619
+0}
+#30753638
+0O
+#30753696
+1~
+#30753716
+1T
+#30754151
+1!!
+#30755196
+0x!
+0w!
+1v!
+0D!
+0C!
+1B!
+#30755641
+0I
+02
+#30755666
+1J
+13
+#30755867
+1K
+14
+#30758146
+0C
+0,
+#30758162
+0B
+0+
+#30758179
+1A
+1*
+#31500000
+b10101 #
+0!
+05
+#31500689
+1m
+#31500936
+0M
+#31501081
+0N
+#32250000
+1!
+15
+#32250775
+1M
+#32250938
+1N
+#32252986
+0L!
+1K!
+#32252989
+0<!
+#32253568
+0"!
+#32253623
+0!!
+#32253626
+1$!
+#32253651
+0~
+#32253688
+1}
+#32253709
+1"!
+#32253718
+1O
+#32253767
+0$!
+#32253804
+1R
+#32254106
+1!!
+#32254241
+0S
+#32255196
+1x!
+1D!
+#32255837
+0K
+04
+#32258194
+1C
+1,
+#33000000
+b10111 #
+b10110 #
+0!
+05
+#33000699
+1.!
+#33000852
+0m
+#33000936
+0M
+#33001081
+0N
+#33750000
+1!
+15
+#33750775
+1M
+#33750938
+1N
+#33752986
+1L!
+#33752989
+0;!
+1<!
+#33753586
+0R
+#33753619
+0}
+#33753638
+0O
+#33753696
+1~
+#33753754
+0"!
+#33753812
+1$!
+#33754133
+0!!
+#33754191
+0#!
+#33754267
+1%!
+#33755196
+0x!
+1w!
+0D!
+1C!
+#33755654
+0J
+03
+#33755867
+1K
+14
+#33758146
+0C
+0,
+#33758210
+1B
+1+
+#34500000
+b10111 #
+0!
+05
+#34500689
+1m
+#34500936
+0M
+#34501081
+0N
+#35250000
+1!
+15
+#35250775
+1M
+#35250938
+1N
+#35252986
+0L!
+0K!
+0J!
+1I!
+#35252989
+0<!
+#35253568
+0&!
+#35253623
+0%!
+#35253651
+0~
+0$!
+#35253688
+1#!
+1}
+#35253709
+1&!
+#35253718
+1O
+#35253779
+1"!
+#35253804
+1R
+#35253862
+0T
+#35253920
+1V
+#35254106
+1%!
+#35254216
+0#!
+#35254259
+1S
+#35254317
+1U
+#35254357
+0W
+#35255196
+1x!
+1D!
+#35255837
+0K
+04
+#35258194
+1C
+1,
+#36000000
+b11111 #
+b11011 #
+b11001 #
+b11000 #
+0!
+05
+#36000739
+10!
+#36000852
+0m
+#36000862
+0.!
+0/!
+#36000936
+0M
+#36001081
+0N
+#36750000
+1!
+15
+#36750775
+1M
+#36750938
+1N
+#36752986
+1L!
+#36752989
+1;!
+1:!
+09!
+1<!
+#36753586
+0R
+#36753619
+0}
+#36753638
+0O
+#36753696
+1~
+#36753716
+1T
+#36753718
+0V
+#36754151
+1!!
+#36755196
+0x!
+0w!
+0v!
+1u!
+0D!
+0C!
+0B!
+1A!
+#36755649
+1I
+12
+#36755652
+0H
+01
+#36755666
+1J
+13
+#36755867
+1K
+14
+#36758140
+0A
+0*
+#36758146
+0C
+0,
+#36758162
+0B
+0+
+#36758310
+1@
+1)
+#37500000
+b11001 #
+0!
+05
+#37500689
+1m
+#37500936
+0M
+#37501081
+0N
+#38250000
+1!
+15
+#38250775
+1M
+#38250938
+1N
+#38252986
+0L!
+1K!
+#38252989
+0<!
+#38253568
+0"!
+#38253623
+0!!
+#38253651
+0~
+#38253688
+1}
+#38253709
+1"!
+#38253718
+1O
+#38253804
+1R
+#38254106
+1!!
+#38254241
+0S
+#38255196
+1x!
+1D!
+#38255837
+0K
+04
+#38258194
+1C
+1,
+#39000000
+b11011 #
+b11010 #
+0!
+05
+#39000699
+1.!
+#39000852
+0m
+#39000936
+0M
+#39001081
+0N
+#39750000
+1!
+15
+#39750775
+1M
+#39750938
+1N
+#39752986
+1L!
+#39752989
+0;!
+1<!
+#39753586
+0R
+#39753619
+0}
+#39753638
+0O
+#39753696
+1~
+#39753754
+0"!
+#39754133
+0!!
+#39754209
+1#!
+#39755196
+0x!
+1w!
+0D!
+1C!
+#39755654
+0J
+03
+#39755867
+1K
+14
+#39758146
+0C
+0,
+#39758210
+1B
+1+
+#40500000
+b11011 #
+0!
+05
+#40500689
+1m
+#40500936
+0M
+#40501081
+0N
+#41250000
+1!
+15
+#41250775
+1M
+#41250938
+1N
+#41252986
+0L!
+0K!
+1J!
+#41252989
+0<!
+#41253619
+0#!
+#41253651
+0~
+#41253688
+1}
+#41253696
+1$!
+#41253718
+1O
+#41253754
+0&!
+#41253779
+1"!
+#41253804
+1R
+#41253837
+0$!
+#41253862
+0T
+#41253895
+1&!
+#41254234
+1#!
+#41254259
+1S
+#41254299
+0U
+#41255196
+1x!
+1D!
+#41255837
+0K
+04
+#41258194
+1C
+1,
+#42000000
+b11111 #
+b11101 #
+b11100 #
+0!
+05
+#42000699
+1/!
+#42000852
+0m
+#42000862
+0.!
+#42000936
+0M
+#42001081
+0N
+#42750000
+1!
+15
+#42750775
+1M
+#42750938
+1N
+#42752986
+1L!
+#42752989
+1;!
+0:!
+1<!
+#42753586
+0R
+#42753619
+0}
+#42753638
+0O
+#42753696
+1~
+#42753716
+1T
+#42754151
+1!!
+#42755196
+0x!
+0w!
+1v!
+0D!
+0C!
+1B!
+#42755641
+0I
+02
+#42755666
+1J
+13
+#42755867
+1K
+14
+#42758146
+0C
+0,
+#42758162
+0B
+0+
+#42758179
+1A
+1*
+#43500000
+b11101 #
+0!
+05
+#43500689
+1m
+#43500936
+0M
+#43501081
+0N
+#44250000
+1!
+15
+#44250775
+1M
+#44250938
+1N
+#44252986
+0L!
+1K!
+#44252989
+0<!
+#44253568
+0"!
+#44253623
+0!!
+#44253626
+1$!
+#44253651
+0~
+#44253684
+0&!
+#44253688
+1}
+#44253709
+1"!
+#44253718
+1O
+#44253767
+0$!
+#44253804
+1R
+#44253825
+1&!
+#44254106
+1!!
+#44254241
+0S
+#44255196
+1x!
+1D!
+#44255837
+0K
+04
+#44258194
+1C
+1,
+#45000000
+b11111 #
+b11110 #
+0!
+05
+#45000699
+1.!
+#45000852
+0m
+#45000936
+0M
+#45001081
+0N
+#45750000
+1!
+15
+#45750775
+1M
+#45750938
+1N
+#45752986
+1L!
+#45752989
+0;!
+1<!
+#45753586
+0R
+#45753619
+0}
+#45753638
+0O
+#45753696
+1~
+#45753725
+0a
+#45753754
+0"!
+#45753812
+1$!
+#45753870
+0&!
+#45754133
+0!!
+#45754191
+0#!
+#45754249
+0%!
+#45754325
+1'!
+#45754404
+0c
+#45755196
+0x!
+1w!
+0D!
+1C!
+#45755654
+0J
+03
+#45755867
+1K
+14
+#45758146
+0C
+0,
+#45758210
+1B
+1+
+#46500000
+b11111 #
+0!
+05
+#46500689
+1m
+#46500936
+0M
+#46501081
+0N
+#47250000
+1!
+15
+#47250775
+1M
+#47250938
+1N
+#47252626
+0d
+#47252986
+0L!
+0K!
+0J!
+0I!
+1H!
+#47252989
+0<!
+#47253182
+0l
+#47253223
+0e
+#47253619
+0'!
+#47253651
+0~
+0$!
+#47253688
+1(!
+1#!
+1}
+#47253715
+1a
+#47253718
+1O
+#47253779
+1"!
+1&!
+#47253804
+1R
+#47253837
+0(!
+#47253862
+0T
+#47253920
+1V
+#47253978
+0X
+#47254036
+1Z
+#47254094
+0\
+#47254152
+1^
+#47254216
+0#!
+#47254234
+1'!
+#47254259
+1S
+#47254317
+1U
+#47254375
+1W
+#47254433
+1Y
+#47254491
+1[
+#47254549
+1]
+#47254607
+1_
+#47255196
+1x!
+1D!
+#47255837
+0K
+04
+#47258194
+1C
+1,
+#48000000
+b111111 #
+b101111 #
+b100111 #
+b100011 #
+b100001 #
+b100000 #
+0!
+05
+#48000699
+12!
+#48000852
+0m
+01!
+#48000862
+0.!
+0/!
+#48000902
+00!
+#48000936
+0M
+#48001081
+0N
+#48750000
+1!
+15
+#48750775
+1M
+#48750938
+1N
+#49500000
+b100001 #
+0!
+05
+#49500689
+1m
+#49500936
+0M
+#49501081
+0N
+#50000000

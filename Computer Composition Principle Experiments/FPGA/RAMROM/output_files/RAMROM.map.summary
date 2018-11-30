@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Nov 29 10:30:55 2018
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : RAMROM
+Top-level Entity Name : FIFO
+Family : Cyclone III
+Total logic elements : 35
+    Total combinational functions : 35
+    Dedicated logic registers : 26
+Total registers : 26
+Total pins : 27
+Total virtual pins : 0
+Total memory bits : 2,048
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

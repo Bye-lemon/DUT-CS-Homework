@@ -1,0 +1,145 @@
+Flow report for RAMROM
+Thu Nov 29 10:31:07 2018
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Thu Nov 29 10:31:07 2018       ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name                      ; RAMROM                                      ;
+; Top-level Entity Name              ; FIFO                                        ;
+; Family                             ; Cyclone III                                 ;
+; Device                             ; EP3C16F484C6                                ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 35 / 15,408 ( < 1 % )                       ;
+;     Total combinational functions  ; 35 / 15,408 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 26 / 15,408 ( < 1 % )                       ;
+; Total registers                    ; 26                                          ;
+; Total pins                         ; 27 / 347 ( 8 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 2,048 / 516,096 ( < 1 % )                   ;
+; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 11/29/2018 10:30:54 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; RAMROM              ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                           ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 176527415776765.154345865401668       ; --            ; --          ; --             ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR       ; D:/RAMROM/simulation/qsim/            ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                  ; --            ; --          ; eda_simulation ;
+; IP_TOOL_NAME                        ; ROM: 1-PORT                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; RAM: 1-PORT                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; FIFO                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                  ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; ROM1P.bsf                             ; --            ; --          ; --             ;
+; MISC_FILE                           ; ROM1P.cmp                             ; --            ; --          ; --             ;
+; MISC_FILE                           ; RAM1P.bsf                             ; --            ; --          ; --             ;
+; MISC_FILE                           ; RAM1P.cmp                             ; --            ; --          ; --             ;
+; MISC_FILE                           ; FIFO2P.bsf                            ; --            ; --          ; --             ;
+; MISC_FILE                           ; FIFO2P.cmp                            ; --            ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                  ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; FIFO        ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; FIFO        ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; FIFO        ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; FIFO                                  ; RAMROM        ; --          ; --             ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 624 MB              ; 00:00:02                           ;
+; Fitter                    ; 00:00:05     ; 1.0                     ; 1325 MB             ; 00:00:05                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 506 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 601 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 468 MB              ; 00:00:00                           ;
+; Total                     ; 00:00:08     ; --                      ; --                  ; 00:00:09                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; D110-6           ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; D110-6           ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; D110-6           ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; D110-6           ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; D110-6           ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off RAMROM -c RAMROM
+quartus_fit --read_settings_files=off --write_settings_files=off RAMROM -c RAMROM
+quartus_asm --read_settings_files=off --write_settings_files=off RAMROM -c RAMROM
+quartus_sta RAMROM -c RAMROM
+quartus_eda --read_settings_files=off --write_settings_files=off RAMROM -c RAMROM
+
+
+
