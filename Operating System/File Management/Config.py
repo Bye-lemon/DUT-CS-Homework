@@ -1,0 +1,3 @@
+CAPACITY = 500
+NUM = 50
+ADDITION = [7, 5, 2, 9, 3.5]
